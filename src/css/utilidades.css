@@ -58,6 +58,8 @@ a {
     border-radius: 5px;
     border: none;
 
+    display: inline-block;
+
     cursor: pointer;
 }
 
@@ -79,4 +81,17 @@ a {
 
 .btn-secundario:hover {
     background-color: var(--clr-dark);
+}
+
+.btn-terciario {
+    color: var(--clr-dark);
+
+    border-radius: 0px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-in;
+}
+
+.btn-terciario:hover {
+    color: var(--clr-primario);
+    border-bottom-color: var(--clr-primario);
 }

@@ -60,6 +60,18 @@
         display: block;
     }
 
+    .linea {
+        width: 20rem;
+    }
+
+    .hero__contenido {
+        gap: 5.6rem;
+    }
+
+    .hero__img {
+        max-width: 30rem;
+    }
+
     .footer__col:nth-child(2) {
         grid-row: 1;
     }
@@ -107,6 +119,25 @@
     .info ion-icon {
         height: 5rem;
         width: 5rem;
+    }
+
+    .linea {
+        width: 60%;
+
+        height: 68rem;
+    }
+
+    .hero__contenido {
+        flex-direction: column;
+    }
+
+    .hero__img {
+        max-width: 44rem;
+        height: 52rem;
+    }
+
+    .hero__info {
+        margin-top: 10.2rem;
     }
 
     .formulario__contenido {

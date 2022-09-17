@@ -22,6 +22,30 @@
 
     <!-- 
     |-----||-----||-----||-----||-----|
+                    Hero
+    |-----||-----||-----||-----||-----|
+    -->
+    <section class="seccion-hero">
+        <div class="linea"></div>
+        <div class="contenedor hero__contenido">
+            <div class="hero__img">
+                <img src="src/img/camara-de-seguridad-hero.jpg" alt="Foto de una camara de seguridad">
+            </div>
+
+            <div class="hero__info">
+                <p class="hero__nombre">UPSS Wireless</p>
+                <h1 class="hero__titulo">Te mereces la mejor conexión</h1>
+                <p class="hero__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="hero__botones">
+                    <a href="#" class="btn btn-primario">Contrata ya</a>
+                    <a href="#" class="btn btn-terciario">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    |-----||-----||-----||-----||-----|
                 Formulario
     |-----||-----||-----||-----||-----|
     -->
