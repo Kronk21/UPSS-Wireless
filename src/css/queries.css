@@ -1,0 +1,130 @@
+/* 
+|-----||-----||-----||-----||-----|
+    Desktops pequeños - 1200px
+        1200 / 16 = 75
+|-----||-----||-----||-----||-----|
+*/
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+/* 
+|-----||-----||-----||-----||-----|
+        Landscape Tablet
+        900 / 16 = 56.25
+|-----||-----||-----||-----||-----|
+*/
+@media (max-width: 56em) {
+    body {
+        position: relative;
+    }
+
+    .contenedor {
+        max-width: 84rem;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .links {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 8.6rem);
+        top: 100%;
+        left: 0;
+
+        background-color: rgba(255, 255, 255, 0.9);
+
+        /* justify-content: center; */
+        padding-top: 8.6rem;
+
+        z-index: 98;
+
+        flex-direction: column;
+
+        display: none;
+    }
+
+    .links ul {
+        flex-direction: column;
+
+        margin-bottom: 4.2rem;
+
+        font-size: 2.2rem;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+}
+
+/* 
+|-----||-----||-----||-----||-----|
+            Tablet
+        670 / 16 = 42
+*/
+@media (max-width: 42em) {
+    /* html {
+        font-size: 50%;
+    } */
+
+    .info {
+        height: 9.2rem;
+    }
+
+    .info .logo {
+        display: none;
+    }
+
+    .info h2 {
+        font-size: 2rem;
+    }
+
+    .info p {
+        font-size: 3.2rem;
+    }
+
+    .info__telefono {
+        text-align: left;
+    }
+
+    .info__redes h2 {
+        display: none;
+    }
+
+    .info ion-icon {
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+/* 
+|-----||-----||-----||-----||-----|
+        Telefono Grande
+        400 / 16 = 25
+*/
+@media (max-width: 25em) {
+    .info {
+        height: 7.2rem;
+    }
+
+    .info h2 {
+        font-size: 1.2rem;
+    }
+
+    .info p {
+        font-size: 2.2rem;
+    }
+
+    .info ion-icon {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .bar .logo {
+        width: 9rem;
+    }
+}

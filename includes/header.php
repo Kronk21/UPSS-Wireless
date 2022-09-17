@@ -5,9 +5,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="src/css/utilidades.css">
+    <script src="https://kit.fontawesome.com/a906dbdcb6.js" crossorigin="anonymous"></script>
     
-    <title><?php echo $titulo; ?></title>
+    <link rel="stylesheet" href="src/css/utilidades.css">
+    <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="src/css/queries.css">    
+
+    <script defer src="src/js/script.js"></script>
+    
+    <title>%TITLE%</title>
 </head>
