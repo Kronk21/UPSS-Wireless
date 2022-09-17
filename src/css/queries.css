@@ -108,6 +108,23 @@
         height: 5rem;
         width: 5rem;
     }
+
+    .formulario__contenido {
+        padding: 4.8rem 3.6rem;
+    }
+
+    .formulario__contenido h2 {
+        font-size: 3.6rem;
+    }
+
+    .formulario__control label {
+        font-size: 1.6rem;
+    }
+
+    .formulario input[type="submit"] {
+        width: 18rem;
+        align-self: flex-end;
+    }
 }
 
 /* 

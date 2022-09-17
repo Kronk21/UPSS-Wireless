@@ -56,6 +56,9 @@ a {
 
     padding: 1.4rem 3.2rem;
     border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
 }
 
 .btn-primario {
@@ -66,4 +69,14 @@ a {
 
 .btn-primario:hover {
     background-color: var(--clr-secundario);
+}
+
+.btn-secundario {
+    color: var(--clr-light);
+    background-color: var(--clr-acento);
+    transition: background-color 0.2s ease-in;
+}
+
+.btn-secundario:hover {
+    background-color: var(--clr-dark);
 }

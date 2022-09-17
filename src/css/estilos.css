@@ -162,11 +162,86 @@
 
 /* 
 |-----||-----||-----||-----||-----|
+            Formulario
+|-----||-----||-----||-----||-----|
+*/
+.seccion-formulario {
+    margin: 6.8rem 0;
+}
+
+.formulario__contenido {
+    background-color: var(--clr-secundario);
+    color: var(--clr-light);
+
+    border-radius: 10px;
+
+    padding: 5.6rem 5.6rem;
+}
+
+.formulario__contenido h2 {
+    font-size: 4.8rem;
+    font-weight: var(--fw-medium);
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 6.6rem;
+}
+
+.formulario {
+    max-width: 50.2rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.formulario__control {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.formulario__control label {
+    font-size: 2rem;
+    font-weight: var(--fw-medium);
+    text-transform: uppercase;
+}
+
+.formulario__control input[type="email"],
+.formulario__control textarea {
+    font-size: 1.8rem;
+    font-family: "Rubik", sans-serif;
+    color: var(--clr-dark);
+
+    height: 5.4rem;
+
+    padding: 1.2rem 2.4rem;
+
+    border: none;
+    outline: none;
+    border-radius: 10px;
+
+    resize: none;
+}
+
+.formulario__control textarea {
+    height: 10rem;
+}
+
+.formulario input[type="submit"] {
+    width: 23.4rem;
+    align-self: flex-end;
+}
+
+/* 
+|-----||-----||-----||-----||-----|
             Footer
 |-----||-----||-----||-----||-----|
 */
 footer {
     padding: 4.2rem 0;
+    margin-top: 6.8rem;
 
     border-top: 1px solid var(--clr-acento);
 }
