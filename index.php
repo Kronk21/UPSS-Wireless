@@ -46,6 +46,58 @@
 
     <!-- 
     |-----||-----||-----||-----||-----|
+                Internet
+    |-----||-----||-----||-----||-----|
+    -->
+    <section class="seccion-internet">
+        <div class="contenedor">
+            <h2>Internet para casa o negocio</h2>
+
+            <div class="paquetes">
+                <div class="paquetes__principal">
+                    <img src="src/img/Blobs.png" alt="Figuras de color">
+                    <div class="paquete__principal">
+                        <p class="principal__nombre">Paquete Gamer</p>
+                        <div class="principal__linea"></div>
+                        <p class="principal__desc">Para usuarios que necesitan la conexión más veloz, para streaming HD, juegos y más.</p>
+                        <p class="principal__precio">$<span>700</span>.00</p>
+                        <a href="#" class="btn btn-primario">Contrata ya</a>
+                    </div>
+                </div>
+
+                <div class="paquetes__secundarios">
+                    <div class="paquete__secundario">
+                        <p class="secundario__nombre">Paquete Basico - $300.00</p>
+                        <div class="secundario__linea"></div>
+                        <p class="secundario__desc">
+                            Navega por la web, realiza tareas, checa tu correo electronico, mira Youtube y revisa Facebook.
+                        </p>
+                        <p class="secundario__desc">
+                            Ve multimedia en plataformas de Streaming (Netflix, HBO, Amazon Prime, etc) en buena calidad.
+                        </p>
+                        <a href="#" class="secundario__link">Contrata ya</a>
+                    </div>
+
+                    <div class="paquetes__lineas"></div>
+
+                    <div class="paquete__secundario">
+                        <p class="secundario__nombre">Paquete Gold - $500.00</p>
+                        <div class="secundario__linea"></div>
+                        <p class="secundario__desc">
+                            Diseñado para transmitir contenido de video en alta definición (720p y 1080p).
+                        </p>
+                        <p class="secundario__desc">
+                            Esencial para cualquier tipo de trabajo en linea (Zoom, Meet, Skype, etc.) sin caidas y con conexión estable.
+                        </p>
+                        <a href="#" class="secundario__link">Contrata ya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    |-----||-----||-----||-----||-----|
                 Formulario
     |-----||-----||-----||-----||-----|
     -->

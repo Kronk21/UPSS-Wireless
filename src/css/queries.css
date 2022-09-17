@@ -17,6 +17,10 @@
 |-----||-----||-----||-----||-----|
 */
 @media (max-width: 56em) {
+    html {
+        font-size: 50%;
+    }
+
     body {
         position: relative;
     }
@@ -72,6 +76,10 @@
         max-width: 30rem;
     }
 
+    .paquetes {
+        flex-direction: column;
+    }
+
     .footer__col:nth-child(2) {
         grid-row: 1;
     }
@@ -88,10 +96,6 @@
         670 / 16 = 42
 */
 @media (max-width: 42em) {
-    /* html {
-        font-size: 50%;
-    } */
-
     .info {
         height: 9.2rem;
     }
@@ -140,6 +144,10 @@
         margin-top: 10.2rem;
     }
 
+    .paquetes__secundarios {
+        margin-top: 4.2rem;
+    }
+
     .formulario__contenido {
         padding: 4.8rem 3.6rem;
     }
@@ -183,6 +191,10 @@
 
     .bar .logo {
         width: 9rem;
+    }
+
+    .paquetes__secundarios {
+        margin-top: 5.6rem;
     }
 
     .footer__grid {
