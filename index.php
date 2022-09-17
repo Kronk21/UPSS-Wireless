@@ -14,12 +14,24 @@
 ?>
 <body>
     <!-- 
-        Navbar 
+    |-----||-----||-----||-----||-----|
+                    Navbar
+    |-----||-----||-----||-----||-----|
     -->
     <?php include "includes/navbar.php"; ?>
 
+
     <!-- 
-        Scripts 
+    |-----||-----||-----||-----||-----|
+                Footer
+    |-----||-----||-----||-----||-----|
+    -->
+    <?php include "includes/footer.php"; ?>
+
+    <!-- 
+    |-----||-----||-----||-----||-----|
+                Scripts
+    |-----||-----||-----||-----||-----|
     -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
