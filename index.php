@@ -98,6 +98,26 @@
 
     <!-- 
     |-----||-----||-----||-----||-----|
+                Productos
+    |-----||-----||-----||-----||-----|
+    -->
+    <section class="seccion-productos">
+        <div class="contenedor">
+            <h2>Tenemos la ultima tecnologia</h2>
+
+            <?php 
+                include "includes/productos_landing.php";
+
+                mostrarProductosPorCategoria(2);
+                mostrarProductosPorCategoria(2);
+                mostrarProductosPorCategoria(2);
+                mostrarCategorias(1, 2);
+            ?>
+        </div>
+    </section>
+
+    <!-- 
+    |-----||-----||-----||-----||-----|
                 Formulario
     |-----||-----||-----||-----||-----|
     -->

@@ -80,6 +80,14 @@
         flex-direction: column;
     }
 
+    .scroll {
+        overflow-x: scroll;
+    }
+
+    .productos-sm {
+        flex-direction: column;
+    }
+
     .footer__col:nth-child(2) {
         grid-row: 1;
     }
@@ -195,6 +203,10 @@
 
     .paquetes__secundarios {
         margin-top: 5.6rem;
+    }
+
+    .producto-sm {
+        flex-direction: column-reverse;
     }
 
     .footer__grid {
