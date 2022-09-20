@@ -1,7 +1,7 @@
 <section class="seccion-formulario">
     <div class="contenedor">
         <div class="formulario__contenido">
-            <h2>Envianos un mensaje</h2>
+            <h3>Envianos un mensaje</h3>
             <form action="#" class="formulario" method="">
                 <div class="formulario__control">
                     <label for="correo">Tu correo electronico:</label>

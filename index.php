@@ -49,7 +49,7 @@
                 Internet
     |-----||-----||-----||-----||-----|
     -->
-    <section class="seccion-internet">
+    <section id="internet" class="seccion-internet">
         <div class="contenedor">
             <h2>Internet para casa o negocio</h2>
 
@@ -101,7 +101,7 @@
                 Productos
     |-----||-----||-----||-----||-----|
     -->
-    <section class="seccion-productos">
+    <section id="productos" class="seccion-productos">
         <div class="contenedor">
             <h2>Tenemos la ultima tecnologia</h2>
 
@@ -136,7 +136,6 @@
                 Scripts
     |-----||-----||-----||-----||-----|
     -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <?php include "includes/scripts.php"; ?>
 </body>
 </html>

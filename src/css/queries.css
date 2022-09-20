@@ -88,6 +88,14 @@
         flex-direction: column;
     }
 
+    main .contenedor {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .lista__productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .footer__col:nth-child(2) {
         grid-row: 1;
     }
@@ -154,6 +162,10 @@
 
     .paquetes__secundarios {
         margin-top: 4.2rem;
+    }
+
+    main .contenedor {
+        grid-template-columns: 1fr;
     }
 
     .formulario__contenido {

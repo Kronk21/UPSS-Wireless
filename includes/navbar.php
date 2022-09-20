@@ -22,13 +22,20 @@
         <div class="links">       
             <ul>
                 <li>
-                    <a href="#">Internet</a>
+                    <a href="
+                    <?php 
+                        echo basename($_SERVER['PHP_SELF']) == "index.php" ?  '#internet' : 'index.php#internet'; 
+                    ?>">Internet</a>
                 </li>
                 <li>
-                    <a href="#">Productos</a>
+                    <a href="
+                    <?php 
+                        echo basename($_SERVER['PHP_SELF']) == "index.php" ?  '#productos' : 'index.php#productos'; 
+                    ?>
+                    ">Productos</a>
                 </li>
                 <li>
-                    <a href="#">Explorar</a>
+                    <a href="productos.php">Explorar</a>
                 </li>
                 <li>
                     <a href="#">Contacto</a>
