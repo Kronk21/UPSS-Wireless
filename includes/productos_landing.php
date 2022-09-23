@@ -4,7 +4,7 @@
 
         $html = 
             "
-            <a href='#' class='producto'>
+            <a href='producto.php' class='producto'>
                 <div class='producto__img'>
                     <img src='src/img/productos/714slNN0VIL._AC_SL1500_.jpg' alt='Fotografia de blablabla'>
                 </div>
@@ -38,7 +38,7 @@
                 $htmlProductos
             </div>
             </div>
-                <a href='#' class='productos__link btn btn-secundario'>Ver más</a>
+                <a href='productos.php' class='productos__link btn btn-secundario'>Ver más</a>
             </div>
             ";
 
@@ -54,7 +54,7 @@
                     <p class='producto-sm__desc'>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, perferendis?
                     </p>
-                    <a href='#' class='producto-sm__link'>Ver más</a>
+                    <a href='productos.php' class='producto-sm__link'>Ver más</a>
                 </div>
                 <div class='producto-sm__img'>
                     <img src='src/img/productos/714slNN0VIL._AC_SL1500_.jpg' alt=''>

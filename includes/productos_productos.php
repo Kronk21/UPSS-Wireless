@@ -5,7 +5,7 @@
             $htmlLinks .= 
                 "
                 <li>
-                    <a href='' class='categoria__nombre'>Camaras de seguridad</a>
+                    <a href='#' class='categoria__nombre'>Camaras de seguridad</a>
                 </li>
                 ";
         }
@@ -27,7 +27,7 @@
         for($i = 0; $i < 16; $i++) {
             $html .= 
                 "
-                <a href='#' class='producto'>
+                <a href='producto.php' class='producto'>
                     <div class='producto__img'>
                         <img src='src/img/productos/714slNN0VIL._AC_SL1500_.jpg' alt='Fotografia de blablabla'>
                     </div>

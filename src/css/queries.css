@@ -96,6 +96,21 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .articulo__imagenes {
+        flex-direction: column-reverse;
+    }
+
+    .imagenes__secundarias {
+        flex-direction: row;
+
+        width: 100%;
+        height: auto;
+    }
+
+    .imagen__secundaria {
+        flex: 1 1 0px;
+    }
+
     .footer__col:nth-child(2) {
         grid-row: 1;
     }
@@ -162,6 +177,10 @@
 
     .paquetes__secundarios {
         margin-top: 4.2rem;
+    }
+
+    .articulo {
+        grid-template-columns: 1fr;
     }
 
     main .contenedor {

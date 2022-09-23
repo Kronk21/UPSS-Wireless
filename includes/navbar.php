@@ -16,7 +16,11 @@
 
 <nav class="navbar">
     <div class="bar contenedor">
-        <a href="#">
+        <a href="
+        <?php
+            echo basename($_SERVER['PHP_SELF']) == "index.php" ?  '#' : 'index.php'; 
+        ?>
+        ">
             <img src="src/img/Logo-Color.png" alt="UPSS Wirelles logo" class="logo">
         </a>
         <div class="links">       
@@ -38,11 +42,15 @@
                     <a href="productos.php">Explorar</a>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
+                    <a href="#contacto">Contacto</a>
                 </li>
             </ul>
             <div>
-                <a href="#" class="btn btn-primario">Contrata ya</a>
+                <a href="
+                <?php 
+                        echo basename($_SERVER['PHP_SELF']) == "index.php" ?  '#internet' : 'index.php#internet'; 
+                    ?>
+                " class="btn btn-primario">Contrata ya</a>
                 <a href="#" class="carrito">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <div class="numero-items">

@@ -1,4 +1,4 @@
-<section class="seccion-formulario">
+<section id="contacto" class="seccion-formulario">
     <div class="contenedor">
         <div class="formulario__contenido">
             <h3>Envianos un mensaje</h3>
