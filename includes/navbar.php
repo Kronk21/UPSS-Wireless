@@ -51,14 +51,20 @@
                         echo basename($_SERVER['PHP_SELF']) == "index.php" ?  '#internet' : 'index.php#internet'; 
                     ?>
                 " class="btn btn-primario">Contrata ya</a>
-                <a href="#" class="carrito">
+                <!-- <a href="#" class="carrito">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <div class="numero-items">
                         <p>0</p>
                     </div>
-                </a>
+                </a> -->
             </div>
         </div>
+        <a href="#" class="carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="numero-items">
+                <p>0</p>
+            </div>
+        </a>
         <button class="btn-menu">
             <i class="fa-solid fa-bars"></i>
         </button>
