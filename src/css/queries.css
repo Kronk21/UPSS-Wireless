@@ -121,6 +121,22 @@
         flex: 1 1 0px;
     }
 
+    .carrito__contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .carrito__lista {
+        grid-row: 2;
+    }
+
+    .carrito__producto {
+        grid-template-columns: 1fr;
+    }
+
+    .carrito__detalles {
+        padding: 1.8rem 2rem;
+    }
+
     .footer__col:nth-child(2) {
         grid-row: 1;
     }
