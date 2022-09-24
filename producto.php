@@ -60,11 +60,12 @@
                         • Micrófono Integrado y Voz Bidireccional<br>
                         • Grabación 24 Horas al Día, 7 Días a la Semana para una Protección Constante
                     </p>
-                    <div class="info__acciones">
-                            <p class="info__cantidad">Cantidad que te interesa:</p>
-                            <input type="number" name="cantidad">
-                        <button class="btn btn-primario">Agregar al carrito</button>
-                    </div>
+                    <form method="POST" class="info__acciones">
+                        <p class="info__cantidad">Cantidad que te interesa:</p>
+                        <input type="number" name="cantidad" value="1" min="1" max="4">
+                        <input type="hidden" name="producto_id" value="">
+                        <button type="submit" class="btn btn-primario">Agregar al carrito</button>
+                    </form>
                 </div>
             </div>
         </div>

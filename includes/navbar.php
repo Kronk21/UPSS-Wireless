@@ -59,7 +59,7 @@
                 </a> -->
             </div>
         </div>
-        <a href="#" class="carrito">
+        <a href="carrito.php" class="carrito">
             <i class="fa-solid fa-cart-shopping"></i>
             <div class="numero-items">
                 <p>0</p>
