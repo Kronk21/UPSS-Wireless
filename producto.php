@@ -61,14 +61,8 @@
                         • Grabación 24 Horas al Día, 7 Días a la Semana para una Protección Constante
                     </p>
                     <div class="info__acciones">
-                            <p class="info__cantidad">Cantidad:</p>
-                            <select name="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
+                            <p class="info__cantidad">Cantidad que te interesa:</p>
+                            <input type="number" name="cantidad">
                         <button class="btn btn-primario">Agregar al carrito</button>
                     </div>
                 </div>
