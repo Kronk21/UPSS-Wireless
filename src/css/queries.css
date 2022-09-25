@@ -266,6 +266,10 @@
         flex-direction: column-reverse;
     }
 
+    .lista__productos {
+        gap: 1.8rem;
+    }
+
     .footer__grid {
         display: flex;
         flex-direction: column;

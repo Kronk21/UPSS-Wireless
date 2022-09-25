@@ -439,14 +439,22 @@ h2 {
 }
 
 .producto__img {
-    width: 100%;
+    /* width: 100%; */
 
     border-bottom: 1px solid var(--clr-acento);
     overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 21.6rem;
 }
 
 .producto__img img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* height: 21.6rem; */
 }
 
 .producto__info {
@@ -641,6 +649,16 @@ main .contenedor {
 
 .imagen__primaria {
     width: 100%;
+    height: 41.4rem;
+}
+
+.imagen__secundaria {
+    height: 8.6rem;
+}
+
+.imagen__primaria img,
+.imagen__secundaria img {
+    object-fit: contain;
     height: 100%;
 }
 
@@ -758,8 +776,16 @@ input[name="cantidad"] {
     margin-bottom: 3.6rem;
 }
 
+.carrito__img {
+    height: 21.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .carrito__img img {
-    width: 100%;
+    /* width: 100%; */
+    height: 100%;
 }
 
 .carrito__acciones {

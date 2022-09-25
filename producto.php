@@ -34,17 +34,17 @@
                             <img src="src/img/productos/714slNN0VIL._AC_SL1500_.jpg" alt="">
                         </div>
                         <div class="imagen__secundaria imagen__inactiva">
-                            <img src="src/img/productos/714slNN0VIL._AC_SL1500_.jpg" alt="">
+                            <img src="src/img/productos/41y3e89VIpL._AC_SL1000_.jpg" alt="">
                         </div>
                         <div class="imagen__secundaria imagen__inactiva">
-                            <img src="src/img/productos/714slNN0VIL._AC_SL1500_.jpg" alt="">
+                            <img src="src/img/productos/81Z0bNjsehL._AC_SL1500_.jpg" alt="">
                         </div>
                         <div class="imagen__secundaria imagen__inactiva">
                             <img src="src/img/productos/714slNN0VIL._AC_SL1500_.jpg" alt="">
                         </div>
                     </div>
                     <div class="imagen__primaria">
-                        <img src="src/img/productos/714slNN0VIL._AC_SL1500_.jpg" alt="">
+                        <img src="src/img/productos/81Z0bNjsehL._AC_SL1500_.jpg" alt="">
                     </div>
                 </div>
                 <div class="articulo__info">
