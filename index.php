@@ -106,11 +106,10 @@
             <h2>Tenemos la ultima tecnologia</h2>
 
             <?php 
-                include "includes/productos_landing.php";
+                include "includes/landing_productos.php";
+                mostrarProductosPorCategoria(2);
 
-                mostrarProductosPorCategoria(2);
-                mostrarProductosPorCategoria(2);
-                mostrarProductosPorCategoria(2);
+                include "includes/landing_categorias.php";
                 mostrarCategorias(1, 2);
             ?>
         </div>
