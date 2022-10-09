@@ -1,3 +1,7 @@
+<?php
+    include "includes/conexion.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <!-- 
@@ -26,12 +30,30 @@
     |-----||-----||-----||-----||-----|
     -->
     <?php
+        if(!isset($_GET["producto_id"])) {
+            header("Location: index.php");
+        }
+    
         //  Obtener info del producto segun $_GET[]
-        $query = "";
-        $producto = "";
+        $query = "SELECT * FROM productos WHERE id = ?";
+        $statement = $conexion->prepare($query);
+        $statement->execute([$_GET["producto_id"]]);
+        $producto = $statement->get_result();
 
-        //  Dar formato a la lista de las caracteristicas
-        $caracteristicas = "";
+        if($producto->num_rows == 0) {
+            header("Location: index.php");
+        }
+        
+        $producto = $producto->fetch_assoc();
+
+        //  Dar formato a la lista de las caracteristicas        
+        function mapear_caracteristicas($linea) {
+            return "• " . $linea;
+        }
+        
+        $caracteristicas = explode("\n", $producto["caracteristicas"]);
+        $caracteristicas = array_map("mapear_caracteristicas", $caracteristicas);
+        $caracteristicas = join("<br>", $caracteristicas);
 
         include "views/producto.view.php";
     ?>

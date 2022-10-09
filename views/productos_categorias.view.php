@@ -1,8 +1,13 @@
 <p class='categorias__titulo'>Categorias</p>
 <ul>
-    <?php foreach($categorias as $categoria): ?>
-        <li>
-            <a href='#' class='categoria__nombre'>Camaras de seguridad</a>
+    <?php while($categoria = $categorias->fetch_assoc()): ?>
+        <li >
+            <a 
+                href='productos.php?categoria_id=<?php echo $categoria["id"]; ?>' 
+                class='categoria__nombre <?php echo $focus == $categoria["id"] ? "focus" : ""?>'
+            >
+                <?php echo $categoria["nombre"]; ?>
+            </a>
         </li>
-    <?php endforeach; ?>
+    <?php endwhile; ?>
 </ul>

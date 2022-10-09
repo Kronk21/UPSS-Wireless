@@ -1,3 +1,7 @@
+<?php
+    include "includes/conexion.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <!-- 
@@ -30,14 +34,14 @@
             <div class="categorias">
                 <?php
                     include "includes/productos_categorias.php";
-                    mostrarMenuCategorias();
-                    ?>
+                    mostrarMenuCategorias($conexion);
+                ?>
             </div>
 
             <div class="lista__productos">
                 <?php
                     include "includes/productos_productos.php";
-                    mostrarProductos(3);
+                    mostrarProductos(isset($_GET["categoria_id"]) ? (int)$_GET["categoria_id"] : 1, $conexion);
                 ?>
             </div>
         </div>

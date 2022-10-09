@@ -1,3 +1,7 @@
+<?php
+    include "includes/conexion.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <!-- 
@@ -107,10 +111,12 @@
 
             <?php 
                 include "includes/landing_productos.php";
-                mostrarProductosPorCategoria(2);
+                mostrarProductosPorCategoria(7, $conexion);
+                mostrarProductosPorCategoria(2, $conexion);
+                mostrarProductosPorCategoria(6, $conexion);
 
                 include "includes/landing_categorias.php";
-                mostrarCategorias(1, 2);
+                mostrarCategorias(3, 4, $conexion);
             ?>
         </div>
     </section>

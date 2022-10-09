@@ -601,8 +601,8 @@ main .contenedor {
 }
 
 .focus {
-    color: var(--clr-secundario);
-    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    background-color: var(--clr-secundario);
 }
 
 .lista__productos {
@@ -940,7 +940,9 @@ input[name="cantidad"] {
 }
 
 .formulario__control input[type="email"],
-.formulario__control textarea {
+.formulario__control textarea,
+.formulario__control input,
+.formulario__control select {
     font-size: 1.8rem;
     font-family: "Rubik", sans-serif;
     color: var(--clr-dark);
@@ -963,6 +965,21 @@ input[name="cantidad"] {
 .formulario input[type="submit"] {
     width: 23.4rem;
     align-self: flex-end;
+}
+
+.seccion-crear {
+    margin-top: 6.8rem;
+}
+
+.seccion-crear .formulario {
+    max-width: 80%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario__control input[type="file"] {
+    color: var(--clr-light);
 }
 
 /* 
