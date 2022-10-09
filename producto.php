@@ -79,5 +79,6 @@
     |-----||-----||-----||-----||-----|
     -->
     <?php include "includes/scripts.php"; ?>
+    <script src="src/js/producto.js"></script>
 </body>
 </html>
