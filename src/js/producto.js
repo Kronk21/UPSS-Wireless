@@ -15,14 +15,21 @@ const blurAllImg = function () {
     imgSecundarias.forEach(blurImg);
 };
 
+const updateGaleria = function (e, parent) {
+    //     img.addEventListener(evento, function (e) {
+    const imgSecundaria = e.target;
+    imgPrimaria.setAttribute("src", imgSecundaria.getAttribute("src"));
+    blurAllImg();
+    focusImg(parent);
+    //     });
+};
+
 imgSecundarias.forEach((img) => {
-    img.addEventListener("mouseover", function (e) {
-        const imgSecundaria = e.target;
+    img.addEventListener("mouseover", (e) => {
+        updateGaleria(e, img);
+    });
 
-        imgPrimaria.setAttribute("src", imgSecundaria.getAttribute("src"));
-
-        blurAllImg();
-
-        focusImg(img);
+    img.addEventListener("click", (e) => {
+        updateGaleria(e, img);
     });
 });
