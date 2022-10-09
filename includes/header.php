@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="src/css/estilos.css">
     <link rel="stylesheet" href="src/css/queries.css">    
 
-    <script defer src="src/js/script.js"></script>
+    <script defer src="src/js/navbar.js"></script>
     
     <title>%TITLE%</title>
 </head>
