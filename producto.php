@@ -1,5 +1,9 @@
 <?php
     include "includes/conexion.php";
+
+    if(!isset($_COOKIE["pc_id"])) {       
+        setcookie("pc_id", uniqid(), time() + 60 * 60 * 24 * 15, "/");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -57,6 +61,17 @@
 
         include "views/producto.view.php";
     ?>
+
+    <section id="productos" class="seccion-productos">
+        <div class="contenedor">
+            <h2>Productos relacionados</h2>
+
+            <?php 
+                include "includes/landing_productos.php";
+                mostrarProductosPorCategoria($producto["categoria_id"], $conexion);
+            ?>
+        </div>
+    </section>
     
     <!-- 
     |-----||-----||-----||-----||-----|

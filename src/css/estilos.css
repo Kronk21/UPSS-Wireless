@@ -781,14 +781,33 @@ input[name="cantidad"] {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 20rem;
+    margin: 0 auto;
 }
 
 .carrito__img img {
-    /* width: 100%; */
+    width: 100%;
     height: 100%;
+    object-fit: contain;
+}
+
+.carrito__info .info__nombre {
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.carrito__info .info__precio {
+    margin: 0;
+}
+
+.info__precio span {
+    font-size: 1.4rem;
+    color: var(--clr-gray);
 }
 
 .carrito__acciones {
+    margin-top: 1.6rem;
+
     display: flex;
     align-items: center;
 }

@@ -59,10 +59,29 @@
                 </a> -->
             </div>
         </div>
+
+        <?php
+            //  Obtener el numero de productos en el carrito
+            if(!isset($_COOKIE["pc_id"])) {
+                $total_de_productos = "0";
+            } else {
+                $pc_id = $_COOKIE["pc_id"];
+
+                $query = "SELECT SUM(cantidad) AS total FROM carritos WHERE id = ?";
+                $statement = $conexion->prepare($query);
+                $statement->execute([$pc_id]);
+                
+                $total_de_productos = $statement->get_result()->fetch_assoc()["total"];
+                $total_de_productos = is_null($total_de_productos) ? "0" : $total_de_productos;
+            }
+        ?>
+        
         <a href="carrito.php" class="carrito">
             <i class="fa-solid fa-cart-shopping"></i>
             <div class="numero-items">
-                <p>0</p>
+                    <p>
+                        <?php echo $total_de_productos; ?>
+                    </p>
             </div>
         </a>
         <button class="btn-menu">

@@ -133,6 +133,11 @@
         grid-template-columns: 1fr;
     }
 
+    .carrito__img {
+        max-width: 38rem;
+        height: 36rem;
+    }
+
     .carrito__detalles {
         padding: 1.8rem 2rem;
     }

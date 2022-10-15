@@ -1,5 +1,9 @@
 <?php
     include "includes/conexion.php";
+
+    if(!isset($_COOKIE["pc_id"])) {       
+        setcookie("pc_id", uniqid(), time() + 60 * 60 * 24 * 15, "/");
+    }
 ?>
 
 <!DOCTYPE html>

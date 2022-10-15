@@ -29,11 +29,12 @@
                 <p class="info__caracteristicas">
                     <?php echo $caracteristicas; ?>
                 </p>
-                <form method="POST" class="info__acciones" action="">
+                
+                <form method="POST" class="info__acciones" action="carrito.php">
                     <p class="info__cantidad">Cantidad que te interesa:</p>
                     <input type="number" name="cantidad" value="1" min="1" max="<?php echo $producto["cantidad"]; ?>">
                     <input type="hidden" name="producto_id" value="<?php echo $producto["id"]; ?>">
-                    <button type="submit" class="btn btn-primario">Agregar al carrito</button>
+                    <button type="submit" name="agregar" class="btn btn-primario">Agregar al carrito</button>
                 </form>
             </div>
         </div>
