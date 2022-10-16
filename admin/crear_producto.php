@@ -1,5 +1,11 @@
 <?php 
+    session_start();
+
     include "../includes/conexion.php";
+
+    if(!isset($_SESSION["admin"])) {
+        header("Location: login.php");
+    }
 
     $errores = "";
     $exito = "";

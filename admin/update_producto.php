@@ -1,5 +1,11 @@
 <?php 
+    session_start();
+
     include "../includes/conexion.php";
+
+    if(!isset($_SESSION["admin"])) {
+        header("Location: login.php");
+    }
 
     if(!isset($_GET["producto_id"])) {
         header("Location: index.php");
