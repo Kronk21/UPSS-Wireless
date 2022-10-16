@@ -1,0 +1,28 @@
+body {
+    background-color: #ebebeb;
+}
+
+.seccion-admin {
+    margin: 3.6rem;
+}
+
+.contenedor {
+    max-width: 80rem;
+}
+
+.paquetes__secundarios {
+    margin-top: 3.6rem;
+}
+
+.admin__links {
+    display: flex;
+    gap: 3rem;
+}
+
+.admin__links a,
+.admin__links a:hover {
+    font-size: 1.6rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
