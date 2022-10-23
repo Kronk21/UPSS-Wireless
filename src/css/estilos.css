@@ -981,6 +981,10 @@ input[name="cantidad"] {
     height: 10rem;
 }
 
+.formulario__control p {
+    font-size: 2rem;
+}
+
 .formulario input[type="submit"] {
     width: 23.4rem;
     align-self: flex-end;
