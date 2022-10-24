@@ -4,6 +4,33 @@
     if(!isset($_COOKIE["pc_id"])) {       
         setcookie("pc_id", uniqid(), time() + 60 * 60 * 24 * 15, "/");
     }
+
+        //  Se ejecuta cuando se agrega un producto desde el archivo producto.php
+    if(isset($_POST["agregar"])) {
+        $pc_id = $_COOKIE["pc_id"];
+        $producto_id = $_POST["producto_id"];
+        $cantidad = $_POST["cantidad"];
+
+        //  Buscar si el producto ya esta en el carrito
+        $query = "SELECT * FROM carritos WHERE producto_id = ?";
+        $statement = $conexion->prepare($query);
+        $statement->execute([$producto_id]);
+        $pr = $statement->get_result();
+
+        if($pr->num_rows == 0) {
+            //  Si el producto no esta en el carrito, insertarlo
+            $query = "INSERT INTO carritos (id, producto_id, cantidad) VALUES (?, ?, ?)";
+            $statement = $conexion->prepare($query);
+            $statement->execute([$pc_id, $producto_id, $cantidad]);
+        } else {
+            //  Si el producto si esta en el carrito, actualizarlo
+            $query = "UPDATE carritos SET cantidad = ? WHERE id = ? AND producto_id = ?";
+            $statement = $conexion->prepare($query);
+            $statement->execute([$cantidad, $pc_id, $producto_id]);
+        }
+
+        header("Location: carrito.php");
+    }
 ?>
 
 <!DOCTYPE html>

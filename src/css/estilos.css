@@ -1005,6 +1005,10 @@ input[name="cantidad"] {
     color: var(--clr-light);
 }
 
+.form__detalles button[name="solicitar"] {
+    margin-top: 2.8rem;
+}
+
 /* 
 |-----||-----||-----||-----||-----|
             Footer

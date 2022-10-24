@@ -1,37 +1,71 @@
 <?php
     include "includes/conexion.php";
 
+    //  Se ejecuta cuando se realiza la solicitud de compra del pedido
+    $errores = "";
+    $exito = "";
+    if(isset($_POST["solicitar"])) {
+        $correo = htmlspecialchars(trim($_POST["correo"]));
+        $carrito = $_POST["carrito_id"];
+        $precio_final = $_POST["total"];
+
+        // echo implode("<br>", [$correo, $carrito, $precio_final]);
+        
+        if(empty($correo)) {
+            $errores .= "<h1><i class='fa-solid fa-circle-exclamation'></i> Correo invalido</h1>";
+        }
+
+        if(empty($errores)) {
+            //  Obtener los productos en el carrito
+            $query = "
+                SELECT 
+                    productos.id,
+                    productos.nombre,
+                    productos.precio AS ppu,
+                    productos.precio * carritos.cantidad AS pec,
+                    carritos.cantidad
+                FROM productos
+                JOIN carritos
+                    ON productos.id = carritos.producto_id
+                WHERE carritos.id = ?";
+            $statement = $conexion->prepare($query);
+            $statement->execute([$carrito]);
+            $productos = $statement->get_result();            
+
+            //  Crear un string con la informacion del carrito
+            $mensaje = "De: " . $correo . "\n\nID de la orden: " . $carrito . "\n\nDetalles de la orden:\n";
+            while($producto = $productos->fetch_assoc()) {
+                $mensaje .= "\t• " . $producto["id"] . " - " . $producto["nombre"] . 
+                                "\n\t\tCantidad: " . $producto["cantidad"] . 
+                                "\n\t\tTotal: $" . number_format($producto["pec"], 2, ".", ",") . " ($" . number_format($producto["ppu"], 2, ".", ",") . "c/u)\n\n";
+            }
+            $mensaje .= "Precio final: $" . number_format($precio_final, 2, ".", ",");
+
+            $mensaje = wordwrap($mensaje, 70);
+
+            //  Enviar el correo
+            $para = "ejemplo@ejemplo.com";
+            $asunto = "Pagina web - Pedido";
+            $contenido = $mensaje;
+            $headers = array("From" => $correo);
+
+            // mail($para, $asunto, $contenido, $headers);
+            
+            $exito = "<h1><i class='fa-solid fa-circle-check'></i> Tu correo se envio de manera exitosa</h1>";
+            $exito .= "Espera nuestra respuesta";
+
+            //  Eliminar la cookie del carrito
+            unset($_COOKIE["pc_id"]);
+            setcookie("pc_id", "", time() - 3600, "/");
+        }
+    }
+
     if(!isset($_COOKIE["pc_id"])) {       
         setcookie("pc_id", uniqid(), time() + 60 * 60 * 24 * 15, "/");
     }
 ?>
 
 <?php
-    //  Se ejecuta cuando se agrega un producto desde el archivo producto.php
-    if(isset($_POST["agregar"])) {
-        $pc_id = $_COOKIE["pc_id"];
-        $producto_id = $_POST["producto_id"];
-        $cantidad = $_POST["cantidad"];
-
-        //  Buscar si el producto ya esta en el carrito
-        $query = "SELECT * FROM carritos WHERE producto_id = ?";
-        $statement = $conexion->prepare($query);
-        $statement->execute([$producto_id]);
-        $pr = $statement->get_result();
-
-        if($pr->num_rows == 0) {
-            //  Si el producto no esta en el carrito, insertarlo
-            $query = "INSERT INTO carritos (id, producto_id, cantidad) VALUES (?, ?, ?)";
-            $statement = $conexion->prepare($query);
-            $statement->execute([$pc_id, $producto_id, $cantidad]);
-        } else {
-            //  Si el producto si esta en el carrito, actualizarlo
-            $query = "UPDATE carritos SET cantidad = ? WHERE id = ? AND producto_id = ?";
-            $statement = $conexion->prepare($query);
-            $statement->execute([$cantidad, $pc_id, $producto_id]);
-        }
-    }
-
     //  Se ejecuta cuando el usuario actualiza la cantidad deseada de un producto
     if(isset($_POST["update"])) {
         $pc_id = $_COOKIE["pc_id"];
@@ -51,7 +85,7 @@
         $query = "DELETE FROM carritos WHERE id = ? AND producto_id = ?";
         $statement = $conexion->prepare($query);
         $statement->execute([$pc_id, $producto_id]);
-    }
+    }    
 ?>
 
 <!DOCTYPE html>
@@ -98,6 +132,12 @@
                     $total_de_productos = is_null($total_de_productos) ? "0" : $total_de_productos;
                 }
             ?>
+
+            
+    <?php 
+        echo $errores;
+        echo $exito;
+    ?>
 
             <?php if($total_de_productos == "0"): ?>
                 <h1 class="hero__titulo">No hay nada en tu carrito</h1>

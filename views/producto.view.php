@@ -30,7 +30,7 @@
                     <?php echo $caracteristicas; ?>
                 </p>
                 
-                <form method="POST" class="info__acciones" action="carrito.php">
+                <form method="POST" class="info__acciones" action="">
                     <p class="info__cantidad">Cantidad que te interesa:</p>
                     <input type="number" name="cantidad" value="1" min="1" max="<?php echo $producto["cantidad"]; ?>">
                     <input type="hidden" name="producto_id" value="<?php echo $producto["id"]; ?>">
