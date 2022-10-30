@@ -45,8 +45,8 @@
                 <h1 class="hero__titulo">Te mereces la mejor conexión</h1>
                 <p class="hero__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 <div class="hero__botones">
-                    <a href="#" class="btn btn-primario">Contrata ya</a>
-                    <a href="#" class="btn btn-terciario">Ver más</a>
+                    <a href="#internet" class="btn btn-primario">Contrata ya</a>
+                    <a href="#productos" class="btn btn-terciario">Ver más</a>
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@
                         <div class="principal__linea"></div>
                         <p class="principal__desc">Para usuarios que necesitan la conexión más veloz, para streaming HD, juegos y más.</p>
                         <p class="principal__precio">$<span>700</span>.00</p>
-                        <a href="#" class="btn btn-primario">Contrata ya</a>
+                        <a href="#contacto" class="btn btn-primario">Contrata ya</a>
                     </div>
                 </div>
 
@@ -83,7 +83,7 @@
                         <p class="secundario__desc">
                             Ve multimedia en plataformas de Streaming (Netflix, HBO, Amazon Prime, etc) en buena calidad.
                         </p>
-                        <a href="#" class="secundario__link">Contrata ya</a>
+                        <a href="#contacto" class="secundario__link">Contrata ya</a>
                     </div>
 
                     <div class="paquetes__lineas"></div>
@@ -97,7 +97,7 @@
                         <p class="secundario__desc">
                             Esencial para cualquier tipo de trabajo en linea (Zoom, Meet, Skype, etc.) sin caidas y con conexión estable.
                         </p>
-                        <a href="#" class="secundario__link">Contrata ya</a>
+                        <a href="#contacto" class="secundario__link">Contrata ya</a>
                     </div>
                 </div>
             </div>
