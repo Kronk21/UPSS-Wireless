@@ -8,15 +8,15 @@
             <ul>
                 <li>
                     <i class="fa-solid fa-location-dot footer__icono"></i>
-                    <p class="footer__info">Blvd. Colosio #110, Valle de San Javier, Pachuca de Soto, Hidalgo.</p>
+                    <p class="footer__info">Av insurgentes #97 col. el Carmen. Ixmiquilpan, Hgo.</p>
                 </li>
                 <li>
                     <i class="fa-solid fa-phone footer__icono"></i>
-                    <p class="footer__info">(+52) 012 345 6789</p>
+                    <p class="footer__info">(+759) 759 723 0294</p>
                 </li>
                 <li>
                     <i class="fa-solid fa-envelope footer__icono"></i>
-                    <p class="footer__info">ejemplo.@ejemplo.com</p>
+                    <p class="footer__info">uppswireless@gmail.com</p>
                 </li>                
             </ul>
         </div>

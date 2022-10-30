@@ -3,7 +3,7 @@
         <img src="src/img/Logo-Blanco.png" alt="UPSS Wireless logo blanco" class="logo">
         <div class="info__telefono">
             <h2>Llamanos</h2>
-            <p>(+52) 012 345 6789</p>
+            <p>(+759) 759 723 0294</p>
         </div>
         <div class="info__redes">
             <h2>Siguenos en:</h2>
