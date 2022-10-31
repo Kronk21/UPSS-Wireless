@@ -43,7 +43,7 @@
             <div class="hero__info">
                 <p class="hero__nombre">UPSS Wireless</p>
                 <h1 class="hero__titulo">Te mereces la mejor conexión</h1>
-                <p class="hero__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p class="hero__texto">!Tenemos las mejores opciones para ti!</p>
                 <div class="hero__botones">
                     <a href="#internet" class="btn btn-primario">Contrata ya</a>
                     <a href="#productos" class="btn btn-terciario">Ver más</a>
@@ -78,7 +78,7 @@
                         <p class="secundario__nombre">Paquete Basico - $300.00</p>
                         <div class="secundario__linea"></div>
                         <p class="secundario__desc">
-                            Navega por la web, realiza tareas, checa tu correo electronico, mira Youtube y revisa Facebook.
+                            Navega por la web, realiza tareas, checa tu correo electrónico, mira Youtube y revisa Facebook.
                         </p>
                         <p class="secundario__desc">
                             Ve multimedia en plataformas de Streaming (Netflix, HBO, Amazon Prime, etc) en buena calidad.
@@ -111,7 +111,7 @@
     -->
     <section id="productos" class="seccion-productos">
         <div class="contenedor">
-            <h2>Tenemos la ultima tecnologia</h2>
+            <h2>Tenemos la última tecnología</h2>
 
             <?php 
                 include "includes/landing_productos.php";

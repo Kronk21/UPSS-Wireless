@@ -226,15 +226,15 @@ section {
     font-size: 2rem;
     font-weight: var(--fw-semi);
 
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.6rem;
 }
 
 .hero__titulo {
     font-size: 6rem;
     font-weight: var(--fw-semi);
-    line-height: 130%;
+    line-height: 105%;
 
-    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
 }
 
 .hero__texto {

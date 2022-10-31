@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-10-2022 a las 02:44:45
+-- Tiempo de generación: 31-10-2022 a las 01:24:02
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -33,6 +33,13 @@ CREATE TABLE `carritos` (
   `cantidad` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `carritos`
+--
+
+INSERT INTO `carritos` (`id`, `producto_id`, `cantidad`) VALUES
+('6355dc7a5d198', 48, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -51,13 +58,13 @@ CREATE TABLE `categorias` (
 --
 
 INSERT INTO `categorias` (`id`, `nombre`, `descripcion`, `imagen`) VALUES
-(1, 'Baterias portatiles', 'Baterias portatiles, sit amet consectetur adipisicing elit. Quam, perferendis?', 'collagebat.jpg'),
-(2, 'Audifonos', 'Audifonos, sit amet consectetur adipisicing elit. Quam, perferendis?', 'collageaud.jpg'),
-(3, 'Cables y Cargadores', 'Cables y Cargadores, sit amet consectetur adipisicing elit. Quam, perferendis?', 'collagecab.jpg'),
-(4, 'Memorias USB', 'Memorias USB, sit amet consectetur adipisicing elit. Quam, perferendis?', 'collageusb.jpg'),
-(5, 'Bocinas', 'Bocinas, sit amet consectetur adipisicing elit. Quam, perferendis?', 'collageboc.jpg'),
-(6, 'Modems', 'Modems, sit amet consectetur adipisicing elit. Quam, perferendis?', 'collagerou.jpg'),
-(7, 'Camaras de seguridad', 'Camaras de seguridad , sit consectetur adipisicing elit. Quam, perferendis?', 'collagecam.jpg');
+(1, 'Baterías portátiles', 'Nunca te quedes sin energía y consigue tu batería portátil y facil de llevar a cualquier lado.', 'collagebat.jpg'),
+(2, 'Audífonos', 'Escucha tus pistas favoritas con lo mejor en tecnología en audífonos.', 'collageaud.jpg'),
+(3, 'Cables y Cargadores', 'Las mejores marcas y mejor precio para tu dispositivo mobil.', 'collagecab.jpg'),
+(4, 'Memorias USB', 'Guarda tus música, fotos, videos y archivos  en una memoria usb y/o micro sD al mejor precio.', 'collageusb.jpg'),
+(5, 'Bocinas', 'Comparte lo mejor de la música, esencial para una reunión entre amigos y familiar.\r\n', 'collageboc.jpg'),
+(6, 'Modems', 'Expande tu internet en casa o negocio y mejoralos con los mejores routers, repetidores y antenas.', 'collagerou.jpg'),
+(7, 'Cámaras de seguridad', 'Las mejores camaras de seguridad  para tu casa o negocio.', 'collagecam.jpg');
 
 -- --------------------------------------------------------
 
@@ -84,13 +91,13 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id`, `nombre`, `precio`, `descripcion`, `caracteristicas`, `cantidad`, `imagen1`, `imagen2`, `imagen3`, `imagen4`, `categoria_id`) VALUES
-(1, 'Power Bank Ridgeway 22500 2 puertos usb estada micro usb', 280.00, 'Bateria portatil para viaje y para que te no te quedes sin bateria en tu celular, amigable con mochila/bolsa de mano/bolsillo.', 'Pila portátil ridgeway MA-60C high speed de 22500mAh color negro', 3, '4tetgergx.jpg', '577895.jpg', 'hxdfh4t.jpg', 'imagenobr1.jpg', 1),
+(1, 'Power Bank Ridgeway 22500 2 puertos USB estada micro USB', 280.00, 'Bateria portatil para viaje y para que te no te quedes sin bateria en tu celular, amigable con mochila/bolsa de mano/bolsillo.', 'Pila portátil ridgeway MA-60C high speed de 22500mAh color negro', 3, '4tetgergx.jpg', '577895.jpg', 'hxdfh4t.jpg', 'imagenobr1.jpg', 1),
 (2, 'Power Bank Portatil 30000mah Dual Puerto Con Linterna', 280.00, 'Bateria portatil para viaje y para que te no te quedes sin bateria en tu celular, amigable con mochila/bolsa de mano/bolsillo.', 'Pila portátil ridgeway YD-55 high speed de 30000mAh color negro', 2, '4thlkeg.jpg', 'axbmju5.jpg', 'bbnmre.jpg', 'loltjgj.jpg', 1),
-(3, 'POWER BANK 20000 mah con 2 puertos usb entrada micro usb', 280.00, 'Bateria portatil para viaje y para que te no te quedes sin bateria en tu celular, amigable con mochila/bolsa de mano/bolsillo.', 'Pila portátil Power Bank, high speed de 6000mAh color negro', 3, '51TrLwZ-h8L._AC_SL1000_.jpg', '61PB5gL+XTL._AC_SL1000_.jpg', '61Tx4bHVAQL._AC_SL1000_.jpg', '512Irn6E15L._AC_SL1000_.jpg', 1),
-(4, 'POWER BANK de 22000 mah 2 puertos usb con entrada tipo C Negro', 280.00, 'Bateria portatil para viaje y para que te no te quedes sin bateria en tu celular, amigable con mochila/bolsa de mano/bolsillo.', 'Pila portátil Power Bank, high speed de 6000mAh color negro', 4, 'olnbvr5u.jpg', 'cdwu7.jpg', 'p78tfbjh.jpg', 'zwrt75.jpg', 1),
-(5, 'Bateria Portatol 2A 20000 mah high Speed 2 puertos usb con multiples cables incorporados', 280.00, 'Bateria portatil para viaje y para que te no te quedes sin bateria en tu celular, amigable con mochila/bolsa de mano/bolsillo.', 'Pila portátil Power Bank, high speed de 20000mAh color negro', 2, '61zjo3Y6wRL._AC_SL1473_.jpg', '61nUdpHNcDL._AC_SL1500_.jpg', '71FtfOpnPfL._AC_SL1500_.jpg', '610UF8wgK9L._AC_SL1406_.jpg', 1),
+(3, 'POWER BANK 20000 mah con 2 puertos USB entrada micro USB', 280.00, 'Bateria portatil para viaje y para que te no te quedes sin bateria en tu celular, amigable con mochila/bolsa de mano/bolsillo.', 'Pila portátil Power Bank, high speed de 6000mAh color negro', 3, '51TrLwZ-h8L._AC_SL1000_.jpg', '61PB5gL+XTL._AC_SL1000_.jpg', '61Tx4bHVAQL._AC_SL1000_.jpg', '512Irn6E15L._AC_SL1000_.jpg', 1),
+(4, 'POWER BANK de 22000 mah 2 puertos USB con entrada tipo C Negro', 280.00, 'Bateria portatil para viaje y para que te no te quedes sin bateria en tu celular, amigable con mochila/bolsa de mano/bolsillo.', 'Pila portátil Power Bank, high speed de 6000mAh color negro', 4, 'olnbvr5u.jpg', 'cdwu7.jpg', 'p78tfbjh.jpg', 'zwrt75.jpg', 1),
+(5, 'Bateria Portatol 2A 20000 mah high Speed 2 puertos USB con multiples cables incorporados', 280.00, 'Bateria portatil para viaje y para que te no te quedes sin bateria en tu celular, amigable con mochila/bolsa de mano/bolsillo.', 'Pila portátil Power Bank, high speed de 20000mAh color negro', 2, '61zjo3Y6wRL._AC_SL1473_.jpg', '61nUdpHNcDL._AC_SL1500_.jpg', '71FtfOpnPfL._AC_SL1500_.jpg', '610UF8wgK9L._AC_SL1406_.jpg', 1),
 (6, 'Audífonos Bluetooth Deportivos Misik Sport MH608 / In ear / Negro con rojo', 250.00, 'Audifonos compactos para el deporte y a prueba de sudor para que no falte el ritmo de tu musica favorita al momento de hacer ejercicio.', '\"Se aplica la última tecnología Bluetooth 4.1, conexión con smartphones, tablets y otros dispositivos de música con Bluetooth fácilmente y rápidamente. \r\nDiseño ligero y human-oriented asegúrese de que el auricular Bluetooth se ajuste cómodo en tus orejas y no se caiga, perfecto para el ciclismo de para correr y hacer ejercicio en gimnasio. \r\nLarga duración de la batería le permite escuchar música o una llamada de teléfono continuamente hasta 5 horas y 120 horas de tiempo de espera\"', 1, 'gbv56756.jpg', 'tgbc.jpg', '3jmfgbr.jpg', 'ktj4u65u.jpg', 2),
-(7, 'STF Audífonos De Diadema Inalámbricos Aurum, Conexión 5.0, Micrófono Incorporado ', 280.00, 'Audifonos de diadema, con una capacidad de 150mah para que disfrutes tu musica por un largo tiempo, plegable y comodo.', '150mah.\r\nBatería bluetooth 5.0 y fácil de cambiar. \r\nPlegable y cómodo.\r\n', 1, '61dBxsqt5pL._AC_SL1000_.jpg', '51IfZf+I-HL._AC_SL1000_.jpg', '31crfTrTFDL._AC_SL1000_.jpg', '71G8xWEKVOL._AC_SL1500_.jpg', 2),
+(7, 'STF Audífonos De Diadema Inalámbricos Aurum, Conexión 5.0, Micrófono Incorporado ', 280.00, 'Audifonos de diadema, con una capacidad de 150mah para que disfrutes tu musica por un largo tiempo, plegable y comodo.', '150mah.\r\nBatería bluetooth 5.0 y fácil de cambiar. \r\nPlegable y cómodo.', 1, '61dBxsqt5pL._AC_SL1000_.jpg', '51IfZf+I-HL._AC_SL1000_.jpg', '31crfTrTFDL._AC_SL1000_.jpg', '71G8xWEKVOL._AC_SL1500_.jpg', 2),
 (8, 'Audífonos Inalámbricos De Diadema，B39 Wireless Auriculares | Bluetooth 5.0 | Batería de Larga Duración | Ultraligeros', 350.00, 'Audifonos de diadema comodos y plegables y cable 3.5.', 'Audifonos bluetooth. \r\nDiadema tipo de conexión: bluetooth/aux 3.5. \r\nDispositivos i/o: bluetooth/aux 3.5.\r\nControl de 5 botones, que incluye reproducir / pausar / responder / colgar, ecualizador, siguiente pista / subir volumen, pista anterior / bajar volumen.', 2, '61H6d1BNfUL._AC_SL1500_.jpg', '71OfdYufKuL._AC_SL1500_.jpg', '71VL4KFZnYL._AC_SL1500_.jpg', '71+Tx7K6Q8L._AC_SL1500_.jpg', 2),
 (9, 'Ridegeway EAR-840 audifonos inlalambricos con extra bass negro', 280.00, 'Escucha tu musica favorita con estos audifonos con bluetooth 4.2.', 'Cancelación de ruido. \r\nAlas de oreja para un ajuste confortable. \r\nInalámbrico especial para el deporte.', 2, 'ygyhrtu.jpg', '2ffghj.jpg', 'xsf.jpg', '087.jpg', 2),
 (10, 'Stereo Sound ear phone with extra bass negro', 130.00, 'Podrás escuchar tu música a través de estos audifonos Bluetooth conectándolo a cualquier dispositivo.', 'Cancelación de ruido. \r\nAlas de oreja para un ajuste confortable. \r\nInalámbrico especial para el deporte.', 1, 'ru45y4.jpg', 'hj5y3.jpg', 'ijnfghj.jpg', 'nry454.jpg', 2),
@@ -103,7 +110,7 @@ INSERT INTO `productos` (`id`, `nombre`, `precio`, `descripcion`, `caracteristic
 (17, '1Hora combo cargador(Cable USB A a lightning y cubo)', 120.00, 'El kit de carga rápida carga teléfonos y tabletas exclusivamente de Apple.  ', 'Carga rapida premium oem. \r\nCompatible con iPhone, iPad o iPod con conector Lightning.', 1, 'combro-iphone-cable-y-cargador-1-hora-2.jpg', 'eyehe5u5jedjk.jpg', 'combro-iphone-cable-y-cargador-1-hora-2.jpg', 'combo-cargador-y-cable-usb-iphone-1.jpg', 3),
 (18, '1Hora combo cargador(Cable USB A a micro usb V9 y cubo)', 120.00, 'Cable de alta calidad de 1 hora para garantizar resistencia, durabilidad y flexibilidad. Es compatible con todos los dispositivos que requieran las entradas de este cable, siendo más funcional y práctico.', 'Carga rapida premium oem. \r\nCompatible con cualquier celular, tablet, con entrada micro usb, incluye cubo y cable.', 1, 'gjdfghdfhd.jpg', 'fhfjgkhglhj.jpg', 'sdgdsgsdh.jpg', '78576wysvdubfu.jpg', 3),
 (19, 'Huawei Super Charge accesorio original 18w', 150.00, 'Carga rápida de 5 A: Potencia de carga de hasta 18 W, soporta 4.5 V/5 A. La velocidad de carga es 4 veces más rápida que los cargadores tradicionales.', 'Accesorio original para dispositivos Huawei, a una potencia maxima de 18W.', 4, '2103393-1.jpg', '474hjkcse2.jpg', '987654fghjk.jpg', 'D_NQ_NP_847826-MLM51216178002_082022-V.jpg', 3),
-(20, '1Hora Cable usb A a micro usb', 80.00, 'El cable micro USB V7 admite una transferencia de datos rápida y estable de 480 MBPS, que puede transferir música, videos y archivos a su computadora. Son compatibles con cualquier dispositivo con entrada USB.', 'Cable de 1m compatible con la mayoria de dispositivos ya sea celular o tableta con entrada micro usb.', 5, 'fa858256916d40318574fc6811f5f400_15022021034427.jpg', '1horacableusb.jpg', 'D_NQ_NP_783850-MLM31985642570_082019-O.jpg', 'ertwbvrwertuynrth96739546.jpg', 3),
+(20, '1Hora Cable USB A a micro USB', 80.00, 'El cable micro USB V7 admite una transferencia de datos rápida y estable de 480 MBPS, que puede transferir música, videos y archivos a su computadora. Son compatibles con cualquier dispositivo con entrada USB.', 'Cable de 1m compatible con la mayoria de dispositivos ya sea celular o tableta con entrada micro usb.', 5, 'fa858256916d40318574fc6811f5f400_15022021034427.jpg', '1horacableusb.jpg', 'D_NQ_NP_783850-MLM31985642570_082019-O.jpg', 'ertwbvrwertuynrth96739546.jpg', 3),
 (21, 'Memoria USB Kingston 64GB', 250.00, 'DataTraveler de Kingston alcanza un rendimiento de grado USB 3.0, que facilita el acceso a portátiles, equipos de sobremesa, monitores y otros dispositivos digitales.', 'Capacidad de almacenamiento de 64GB. \r\nConectividad USB 3.0. \r\nTipo de conector: USB-A. \r\nDimensiones: 21mm de ancho, 55mm de alto y 10.1mm de profundidad. \r\nCon tapa extraíble. \r\nRecomendado para transferencias de alta velocidad. \r\nLiviano e ideal para transportar todo tipo de archivos.', 3, 'abvg.jpg', 'D_NQ_NP_761666-MLM26190029100_102017-O.jpg', 'memoria-usb-64gb-kingston-metalica-dtse9-2.jpg', 'vra4wet.jpg', 4),
 (22, 'Memoria USB Kingston 32GB', 180.00, 'DataTraveler Exodia de Kingston alcanza un rendimiento de grado USB 3.2 Gen 1, que facilita el acceso a portátiles, equipos de sobremesa, monitores y otros dispositivos digitales.', 'Capacidad de almacenamiento de 32GB. \r\nLiviano e ideal para transportar todo tipo de archivos. \r\nRecomendado para transferencias de alta velocidad. \r\nCon tapa extraíble. \r\nDimensiones: 21.04mm de ancho, 67.3mm de alto y 10.14mm de profundidad. \r\nMaterial: Plástico. \r\nTipo de conector: USB-A. \r\nConectividad USB 3.2 Gen 1.', 2, '44-44.jpg', 'ju55.jpg', 'memoria-usb-kingston-32gb-g4.jpg', 'Memorias-USB-32gb-Kingston-DataTraveler-G4-.jpg', 4),
 (23, 'Memoria USB Adata 16GB ', 150.00, 'Capacidad adaptada a tus requerimientos Este pendrive te permitirá almacenar hasta 16 GB para que puedas guardar gran cantidad de información, imágenes u otros tipos de archivos.', 'Capacidad de almacenamiento de 16GB. \r\nLiviano e ideal para transportar todo tipo de archivos. \r\nRecomendado para transferencias de alta velocidad. \r\nDiseño elegante y sin tapa. Dimensiones: 12.2mm de ancho, 39mm de alto y 4.5mm de profundidad. \r\nMaterial: Metal. \r\nTipo de conector: USB-A. \r\nConectividad USB 2.0.', 5, 'fhdtr.jpg', 'nj5y.jpg', '8n7b5.jpg', 'etyjm.jpg', 4),

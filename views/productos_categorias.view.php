@@ -1,4 +1,4 @@
-<p class='categorias__titulo'>Categorias</p>
+<p class='categorias__titulo'>Categorías</p>
 <ul>
     <?php while($categoria = $categorias->fetch_assoc()): ?>
         <li >

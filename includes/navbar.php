@@ -6,7 +6,7 @@
             <p>(+759) 759 723 0294</p>
         </div>
         <div class="info__redes">
-            <h2>Siguenos en:</h2>
+            <h2>Síguenos en:</h2>
             <a href="#">
                 <ion-icon name="logo-facebook"></ion-icon>
             </a>
